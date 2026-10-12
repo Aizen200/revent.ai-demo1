@@ -1,26 +1,180 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-ink: #080912;
+  --color-navy: #1c2141;
+  --color-deep: #004fba;
+  --color-brand: #007aff;
+  --color-muted: rgb(28 33 65 / 0.8);
+  --color-line: rgb(0 122 255 / 0.16);
+  --color-surface: #e7f2ff;
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-geist-sans);
+  --animate-marquee: marquee 32s linear infinite;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: var(--color-ink);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+@utility text-gradient {
+  background: linear-gradient(180deg, #007aff 0%, #1c2141 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 56px;
+  min-width: 180px;
+  padding: 0 24px;
+  border-radius: 12px;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@utility btn-dark {
+  background: linear-gradient(180deg, #007aff 0%, #004fba 100%);
+  color: #fff;
+  box-shadow:
+    0 8px 16px 0 rgb(0 122 255 / 0.32),
+    inset 0 0 0 2px rgb(255 255 255 / 0.2);
+
+  &:hover {
+    box-shadow:
+      0 8px 16px 0 rgb(0 122 255 / 0.44),
+      inset 0 0 0 2px rgb(255 255 255 / 0.2);
+  }
+}
+
+@utility btn-light {
+  background: linear-gradient(180deg, #fff 0%, #e7f2ff 100%);
+  color: var(--color-ink);
+  box-shadow:
+    0 8px 16px 0 rgb(0 79 186 / 0.12),
+    inset 0 0 0 2px #fff;
+
+  &:hover {
+    box-shadow:
+      0 8px 16px 0 rgb(0 79 186 / 0.16),
+      inset 0 0 0 2px #fff;
+  }
+}
+
+/* Grey panel with the template's white rim and soft drop shadow */
+@utility card {
+  border: 2px solid #fff;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgb(231 242 255 / 0.5) 0%, #e7f2ff 100%);
+  box-shadow: 0 8px 16px 0 rgb(0 79 186 / 0.12);
+}
+
+/* Raised white tile used inside cards */
+@utility tile {
+  border: 2px solid #fff;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff 0%, #e7f2ff 100%);
+  box-shadow: 0 8px 16px 0 rgb(0 79 186 / 0.08);
+}
+
+@utility icon-box {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #007aff 0%, #004fba 100%);
+  box-shadow:
+    0 8px 16px 0 rgb(0 122 255 / 0.32),
+    inset 0 0 0 1px rgb(255 255 255 / 0.24);
+}
+
+@utility fade-x {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 10%,
+    #000 90%,
+    transparent 100%
+  );
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+@utility bg-brand {
+  background: linear-gradient(180deg, #007aff 0%, #004fba 100%);
 }
