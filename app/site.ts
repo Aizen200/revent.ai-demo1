@@ -16,7 +16,6 @@ export const images = {
 };
 
 export const navLinks = [
-  { href: "#about", label: "About us" },
   { href: "#solutions", label: "Solutions" },
   { href: "#case-studies", label: "Case Studies" },
   { href: "#why-us", label: "Why Us" },
@@ -43,25 +42,25 @@ export const solutions = [
     icon: img("LzPBtaHdymAROYB08IBc75GUdqY.svg"),
     title: "Business operations",
     description:
-      "Track information from an operating lens not an accounting lens, automate repetitive manual processes such as quotations, purchase orders, invoices, delivery documents, receipts generation.",
+      "Track information from an operating lens, not an accounting lens. Automate quotations, purchase orders, invoices and receipts.",
   },
   {
     icon: img("ZQ9LRkDUzuQmxgdHJQPqanCyMDI.svg"),
     title: "Inventory and workflow management",
     description:
-      "Automate product cataloguing, sub inventory management, end-to-end tracking from raw materials to finished goods, avoid duplicate billing, missing inventory etc. Deploy AI to generate more effective product images for sales and marketing.",
+      "Track everything from raw materials to finished goods, with no duplicate billing or missing inventory. AI-generated product images for sales.",
   },
   {
     icon: img("iQSfPi1dWWpgZ9D8UHbgEo7DyM.svg"),
     title: "Workforce applications",
     description:
-      "Manage business operations efficiently with systems that track ongoing orders, work in progress etc with simple interfaces for employees to use to their aid.",
+      "Simple apps for employees to track ongoing orders and work in progress.",
   },
   {
     icon: img("S7cumS8E2Yglc5jE9tHBvTzuk.svg"),
     title: "Management reporting",
     description:
-      "Set up dashboards to track key business metrics, key client updates and anything that makes your business tick.",
+      "Dashboards for key business metrics, client updates and anything that makes your business tick.",
   },
 ];
 
@@ -83,7 +82,7 @@ export const caseStudies = [
     location: "Mumbai, India",
     image: img("GyGy9tdLhGReRc1wiQfUj7GHQY.png"),
     description:
-      "Built a custom MIS for textile traders based in Mumbai, India to tackle challenges such as raw material accounting, design management, packaging and documentation, order tracking, customer invoicing etc.",
+      "Custom MIS for textile traders.",
     challenges: [
       "Raw material accounting",
       "Design management",
@@ -97,7 +96,7 @@ export const caseStudies = [
     location: "Senegal, Africa",
     image: img("nMPpbIPs8beEk0SdtFkFUU24.png"),
     description:
-      "Built a custom MIS for a cement manufacturing plant in Senegal, Africa to tackle inventory formulation management, compliance documentation, plant scheduling, capacity planning, customer flow management etc.",
+      "Custom MIS for a cement manufacturing plant.",
     challenges: [
       "Inventory formulation",
       "Compliance documentation",
@@ -111,7 +110,7 @@ export const caseStudies = [
     location: "Dubai, UAE",
     image: img("l38NofRiCurjAYNe3fKBaKHpM9k.png"),
     description:
-      "Built a custom MIS for an EXIM facilitator based in Dubai, UAE to track containers centrally, generate export documentation, track ongoing bookings and fulfillment, order pipeline management etc.",
+      "Custom MIS for an EXIM facilitator.",
     challenges: [
       "Central container tracking",
       "Export documentation",
@@ -126,19 +125,19 @@ export const reasons = [
     icon: img("hWQHlGPYF3FrI8QTwSLZvjuMQ.svg"),
     title: "SME-MSME specific challenges",
     description:
-      "Owner managed businesses require tools that aid in easily capturing and organising information for decision making. We focus on simplifying that to reduce load and enable quick decision making.",
+      "Owner-managed businesses need information that's easy to capture and organise, for quick decision making.",
   },
   {
     icon: img("niTgfBhce8UUqjXS5klg4rOJg.svg"),
     title: "Unique problems",
     description:
-      "Each business has unique problems. We shadow the business to understand the problems that require addressing, to set up systems that actually solve problems and not add to the workload.",
+      "We shadow your business to build systems that solve real problems, not add to the workload.",
   },
   {
     icon: img("XzS2vY4d5PCcZuXHrpjUaLD0.svg"),
     title: "Employee first UI",
     description:
-      "We design interfaces that can easily be operated by blue collar workers as well as white collar workers, to ensure the business does not require a separate data entry clerk to manage systems. This is done by supporting multiple languages, near zero data entry requirement and image based reconfirmation layers.",
+      "Interfaces anyone on the floor can use: multiple languages, near zero data entry and image-based reconfirmation. No separate data entry clerk needed.",
   },
 ];
 

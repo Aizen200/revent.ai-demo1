@@ -11,12 +11,14 @@ export function Nav() {
     <header className="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur-xl">
       <nav className="mx-auto max-w-[1320px] px-5 py-5">
         <div className="flex items-center justify-between gap-4">
-          <a
-            href="#top"
-            className="font-display text-[28px] leading-none font-semibold tracking-[-0.06em]"
-          >
-            {BRAND.replace(".ai", "")}
-            <span className="text-brand">.ai</span>
+          <a href="#top" aria-label={BRAND} className="shrink-0">
+            <img
+              src="/logo.png"
+              alt={BRAND}
+              width={800}
+              height={143}
+              className="h-7 w-auto mix-blend-multiply"
+            />
           </a>
 
           <ul className="hidden items-center gap-10 lg:flex">

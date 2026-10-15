@@ -71,6 +71,7 @@ h4 {
   }
 }
 
+/* Primary blue CTA */
 @utility btn-dark {
   background: linear-gradient(180deg, #007aff 0%, #004fba 100%);
   color: #fff;

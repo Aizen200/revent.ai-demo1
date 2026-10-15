@@ -12,7 +12,6 @@ import {
   navLinks,
   reasons,
   solutions,
-  stats,
   steps,
 } from "./site";
 
@@ -67,10 +66,13 @@ function SectionHeading({
 
 function Wordmark({ className = "" }: { className?: string }) {
   return (
-    <span className={`font-display font-semibold tracking-[-0.06em] ${className}`}>
-      {BRAND.replace(".ai", "")}
-      <span className="text-brand">.ai</span>
-    </span>
+    <img
+      src="/logo.png"
+      alt={BRAND}
+      width={800}
+      height={143}
+      className={`w-auto mix-blend-multiply ${className}`}
+    />
   );
 }
 
@@ -93,8 +95,8 @@ export default function Home() {
               <Tag variant="hero">Custom software for growing businesses</Tag>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="text-gradient pb-2 text-5xl tracking-[-0.06em] md:text-[64px]">
-                Spreadsheets limiting your business?
+              <h1 className="text-gradient px-[0.1em] pb-2 text-5xl tracking-[-0.06em] md:text-[64px]">
+                Spreadsheets limiting your business<span className="font-sans">?</span>
               </h1>
             </Reveal>
             <Reveal delay={160}>
@@ -103,9 +105,6 @@ export default function Home() {
               </p>
             </Reveal>
             <Reveal delay={240} className="mt-4 flex flex-wrap justify-center gap-4">
-              <a href="#contact" className="btn btn-dark">
-                Book a Demo
-              </a>
               <a href="#case-studies" className="btn btn-light">
                 Explore Our Work
               </a>
@@ -142,57 +141,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About */}
-        <section
-          id="about"
-          className="bg-[linear-gradient(180deg,#fff_0,#f6f9ff_240px)] py-16"
-        >
-          <div className={container}>
-            <Reveal className="mx-auto flex max-w-[1064px] flex-col items-center gap-8 text-center">
-              <span className="rounded-full border border-brand/50 px-3.5 py-2 font-display text-sm font-medium text-brand uppercase">
-                About us
-              </span>
-              <h2 className="text-2xl tracking-[-0.06em] text-wrap md:text-[38px]">
-                At Revent, we build custom operating systems for businesses to
-                help them manage information as they scale. We work with
-                clients to replace spreadsheets, paper documents and time
-                consuming repetitive tasks with process automation and
-                organised business MIS setup.
-              </h2>
-              <p className="max-w-3xl text-lg text-muted">
-                We design completely customised software that runs on desktop,
-                android and iOS for flexibility. Our speciality is building
-                software that can be used by blue collar workforce with ease,
-                to ensure a successful transition from outdated systems to
-                modern tools for managing business, which is why we’re a great
-                partner to growing SMEs and MSMEs.
-              </p>
-            </Reveal>
-
-            <Reveal className="card mx-auto mt-16 flex max-w-[1064px] flex-col items-center px-4 pt-14 pb-7 md:px-7">
-              <h3 className="text-gradient max-w-lg pb-1 text-center text-3xl tracking-[-0.04em] md:text-[38px]">
-                Custom software capable of managing your end to end business
-              </h3>
-              <img
-                src={images.cubes}
-                alt=""
-                className="mt-2 w-full max-w-[460px]"
-              />
-              <ul className="relative -mt-10 grid w-full gap-5 md:grid-cols-3">
-                {stats.map((stat) => (
-                  <li key={stat.label} className="tile p-6">
-                    <p className="font-display text-6xl font-medium tracking-[-0.02em]">
-                      {stat.value}
-                      <span className="text-brand">{stat.suffix}</span>
-                    </p>
-                    <p className="mt-3 text-lg text-ink/60">{stat.label}</p>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
-        </section>
-
         {/* Core value additions */}
         <section id="solutions" className="relative pt-24 pb-16">
           <div className="absolute inset-x-0 top-0 -z-10 h-[430px] bg-surface/50" />
@@ -201,9 +149,8 @@ export default function Home() {
               tag="Core value additions"
               title="One system to run your business, end to end."
             >
-              We have served clients in the textile industry, cement
-              manufacturing, logistics and shipping, building custom softwares
-              capable of managing their end to end business.
+              Custom software for textile, cement, logistics and shipping
+              businesses.
             </SectionHeading>
 
             <div className="grid gap-6 md:grid-cols-2">
@@ -361,12 +308,6 @@ export default function Home() {
                   </li>
                 ))}
               </ol>
-
-              <Reveal>
-                <a href="#contact" className="btn btn-dark">
-                  Book a Demo
-                </a>
-              </Reveal>
             </div>
 
             <Reveal className="card relative rounded-[32px]! p-2.5">
@@ -399,8 +340,7 @@ export default function Home() {
                 Let’s build your custom solution
               </h2>
               <p className="max-w-2xl text-lg text-ink/60">
-                Looking forward to meeting with you to walk through some of our
-                systems and how we can collaborate to build a custom solution
+                Let’s walk through some of our systems and how we can build one
                 tailored to your requirements.
               </p>
             </div>
@@ -427,7 +367,7 @@ export default function Home() {
 
           <div className="grid gap-10 pb-12 md:grid-cols-[1.4fr_1fr_1fr]">
             <div className="flex flex-col gap-6">
-              <Wordmark className="text-[32px] leading-none" />
+              <Wordmark className="h-8 self-start" />
               <p className="max-w-[260px] font-display text-xl leading-[1.2] font-medium text-ink/60">
                 Custom operating systems for growing businesses.
               </p>
