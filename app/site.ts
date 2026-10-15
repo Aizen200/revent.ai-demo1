@@ -4,8 +4,7 @@ const img = (id: string) => `https://framerusercontent.com/images/${id}`;
 
 export const BRAND = "Revent.ai";
 
-// Placeholder — replace with the real enquiry address.
-export const CONTACT_EMAIL = "hello@revent.ai";
+export const CONTACT_EMAIL = "support@revent.ai";
 
 export const images = {
   heroBg: img("CXf1VtliCLhgE72rnxykPb20LI8.png"),
