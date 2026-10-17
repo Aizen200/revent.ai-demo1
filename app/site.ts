@@ -15,10 +15,10 @@ export const images = {
 };
 
 export const navLinks = [
+  { href: "#process", label: "How We Work" },
   { href: "#solutions", label: "Solutions" },
   { href: "#case-studies", label: "Case Studies" },
   { href: "#why-us", label: "Why Us" },
-  { href: "#process", label: "How We Work" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -39,24 +39,28 @@ export const stats = [
 export const solutions = [
   {
     icon: img("LzPBtaHdymAROYB08IBc75GUdqY.svg"),
+    image: "/mockups/ai-operations.svg",
     title: "Business operations",
     description:
       "Track information from an operating lens, not an accounting lens. Automate quotations, purchase orders, invoices and receipts.",
   },
   {
     icon: img("ZQ9LRkDUzuQmxgdHJQPqanCyMDI.svg"),
+    image: "/mockups/ai-inventory.svg",
     title: "Inventory and workflow management",
     description:
       "Track everything from raw materials to finished goods, with no duplicate billing or missing inventory. AI-generated product images for sales.",
   },
   {
     icon: img("iQSfPi1dWWpgZ9D8UHbgEo7DyM.svg"),
+    image: "/mockups/ai-workforce.svg",
     title: "Workforce applications",
     description:
       "Simple apps for employees to track ongoing orders and work in progress.",
   },
   {
     icon: img("S7cumS8E2Yglc5jE9tHBvTzuk.svg"),
+    image: "/mockups/ai-reporting.svg",
     title: "Management reporting",
     description:
       "Dashboards for key business metrics, client updates and anything that makes your business tick.",
@@ -79,7 +83,7 @@ export const caseStudies = [
   {
     name: "Textile Business",
     location: "Mumbai, India",
-    image: img("GyGy9tdLhGReRc1wiQfUj7GHQY.png"),
+    image: "/mockups/case-textile.svg",
     description:
       "Custom MIS for textile traders.",
     challenges: [
@@ -93,7 +97,7 @@ export const caseStudies = [
   {
     name: "Cement Manufacturers",
     location: "Senegal, Africa",
-    image: img("nMPpbIPs8beEk0SdtFkFUU24.png"),
+    image: "/mockups/case-cement.svg",
     description:
       "Custom MIS for a cement manufacturing plant.",
     challenges: [
@@ -107,7 +111,7 @@ export const caseStudies = [
   {
     name: "EXIM Facilitators",
     location: "Dubai, UAE",
-    image: img("l38NofRiCurjAYNe3fKBaKHpM9k.png"),
+    image: "/mockups/case-exim.svg",
     description:
       "Custom MIS for an EXIM facilitator.",
     challenges: [

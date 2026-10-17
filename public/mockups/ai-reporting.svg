@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3f8ff"/>
+      <stop offset="1" stop-color="#dbe8ff"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c2141"/>
+      <stop offset="1" stop-color="#007aff"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#007aff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#007aff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#004fba" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+
+  <!-- KPI tiles -->
+  <g filter="url(#sh)">
+    <rect x="28" y="28" width="134" height="80" rx="14" fill="#fff"/>
+    <rect x="174" y="28" width="134" height="80" rx="14" fill="#fff"/>
+    <rect x="28" y="120" width="280" height="252" rx="16" fill="#fff"/>
+  </g>
+  <text x="44" y="54" font-size="12" fill="#1c2141" fill-opacity="0.55">Revenue · Oct</text>
+  <text x="44" y="88" font-size="22" font-weight="600" fill="#1c2141" letter-spacing="-0.5">₹62.4L</text>
+  <text x="146" y="54" text-anchor="end" font-size="12" font-weight="600" fill="#16a34a">+12%</text>
+  <text x="190" y="54" font-size="12" fill="#1c2141" fill-opacity="0.55">Open orders</text>
+  <text x="190" y="88" font-size="22" font-weight="600" fill="#1c2141" letter-spacing="-0.5">47</text>
+  <text x="292" y="54" text-anchor="end" font-size="12" font-weight="600" fill="#b45309">5 late</text>
+
+  <!-- chart -->
+  <text x="44" y="148" font-size="13" font-weight="600" fill="#1c2141">Monthly sales</text>
+  <rect x="200" y="134" width="94" height="20" rx="10" fill="#e1eeff"/>
+  <path transform="translate(212 144)" d="M0-5.5C.5-1.8 1.8-.5 5.5 0 1.8.5.5 1.8 0 5.5-.5 1.8-1.8.5-5.5 0-1.8-.5-.5-1.8 0-5.5z" fill="#007aff"/>
+  <text x="222" y="148" font-size="10" font-weight="600" fill="#007aff">AI forecast</text>
+  <g stroke="#007aff" stroke-opacity="0.1">
+    <path d="M44 190H292M44 240H292M44 290H292M44 340H292"/>
+  </g>
+  <path d="M44 310L80 290 116 298 152 262 188 250 224 222V340H44z" fill="url(#area)"/>
+  <path d="M44 310L80 290 116 298 152 262 188 250 224 222" fill="none" stroke="#007aff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M224 222L258 206 292 184" fill="none" stroke="#007aff" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 7"/>
+  <circle cx="224" cy="222" r="5" fill="#fff" stroke="#007aff" stroke-width="3"/>
+  <g font-size="10" fill="#1c2141" fill-opacity="0.45" text-anchor="middle">
+    <text x="44" y="360">May</text>
+    <text x="116" y="360">Jul</text>
+    <text x="188" y="360">Sep</text>
+    <text x="292" y="360" text-anchor="end">Dec</text>
+  </g>
+
+  <!-- AI assistant panel -->
+  <g filter="url(#sh)">
+    <rect x="332" y="28" width="280" height="344" rx="18" fill="#fff"/>
+  </g>
+  <rect x="348" y="44" width="30" height="30" rx="9" fill="url(#ai)"/>
+  <path transform="translate(363 59)" d="M0-9C.8-2.6 2.6-.8 9 0 2.6.8.8 2.6 0 9-.8 2.6-2.6.8-9 0-2.6-.8-.8-2.6 0-9z" fill="#fff"/>
+  <text x="388" y="56" font-size="14" font-weight="600" fill="#1c2141">Ask your business</text>
+  <text x="388" y="72" font-size="11" fill="#1c2141" fill-opacity="0.5">AI assistant</text>
+
+  <rect x="430" y="94" width="166" height="52" rx="14" fill="#007aff"/>
+  <text x="444" y="116" font-size="12" fill="#fff">Which clients are</text>
+  <text x="444" y="134" font-size="12" fill="#fff">overdue this month?</text>
+
+  <rect x="348" y="160" width="232" height="124" rx="14" fill="#eef4fc"/>
+  <text x="362" y="182" font-size="12" fill="#1c2141">3 clients owe ₹8.2L:</text>
+  <g font-size="12" fill="#1c2141">
+    <rect x="362" y="194" width="204" height="24" rx="8" fill="#fff"/>
+    <text x="372" y="210">Shah Fabrics</text>
+    <text x="556" y="210" text-anchor="end" font-weight="600">₹4.1L</text>
+    <rect x="362" y="222" width="204" height="24" rx="8" fill="#fff"/>
+    <text x="372" y="238">Mehta Traders</text>
+    <text x="556" y="238" text-anchor="end" font-weight="600">₹2.6L</text>
+    <rect x="362" y="250" width="204" height="24" rx="8" fill="#fff"/>
+    <text x="372" y="266">Kiran Exports</text>
+    <text x="556" y="266" text-anchor="end" font-weight="600">₹1.5L</text>
+  </g>
+  <rect x="348" y="294" width="132" height="28" rx="14" fill="#e1eeff"/>
+  <text x="414" y="312" text-anchor="middle" font-size="11" font-weight="600" fill="#007aff">Send reminders</text>
+
+  <rect x="348" y="332" width="248" height="28" rx="14" fill="#fff" stroke="#007aff" stroke-opacity="0.2"/>
+  <text x="362" y="350" font-size="11" fill="#1c2141" fill-opacity="0.4">Ask about stock, sales, orders…</text>
+  <circle cx="582" cy="346" r="10" fill="#007aff"/>
+  <path d="M578 346h8m-3-3 3 3-3 3" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

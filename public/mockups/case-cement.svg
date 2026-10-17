@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1184 1048" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="ai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c2141"/>
+      <stop offset="1" stop-color="#007aff"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef5ff"/>
+      <stop offset="1" stop-color="#d6e6ff"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b9bff"/>
+      <stop offset="1" stop-color="#004fba"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#004fba" flood-opacity="0.16"/>
+    </filter>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="10" height="10" fill="#fef3c7"/>
+      <rect width="4" height="10" fill="#f59e0b" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1184" height="1048" fill="url(#bg)"/>
+
+  <g transform="translate(64 72)">
+    <rect width="1056" height="904" rx="24" fill="#fff" filter="url(#sh)"/>
+    <circle cx="30" cy="28" r="6.5" fill="#ff5f57"/>
+    <circle cx="52" cy="28" r="6.5" fill="#febc2e"/>
+    <circle cx="74" cy="28" r="6.5" fill="#28c840"/>
+    <text x="528" y="33" text-anchor="middle" font-size="15" fill="#1c2141" fill-opacity="0.5">Revent MIS · Cement Plant</text>
+    <rect y="56" width="1056" height="1" fill="#007aff" fill-opacity="0.12"/>
+
+    <!-- sidebar -->
+    <path d="M0 57h220v847H24a24 24 0 0 1-24-24z" fill="#f5f9ff"/>
+    <rect x="24" y="84" width="34" height="34" rx="9" fill="#007aff"/>
+    <text x="41" y="107" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">C</text>
+    <text x="70" y="99" font-size="15" font-weight="600" fill="#1c2141">Sahel Cement</text>
+    <text x="70" y="116" font-size="12" fill="#1c2141" fill-opacity="0.5">Senegal</text>
+    <rect x="16" y="150" width="188" height="40" rx="10" fill="#e1eeff"/>
+    <g font-size="15" fill="#1c2141" fill-opacity="0.7">
+      <text x="44" y="175" fill="#007aff" fill-opacity="1" font-weight="600">Overview</text>
+      <text x="44" y="221">Production</text>
+      <text x="44" y="269">Silos &amp; inventory</text>
+      <text x="44" y="317">Dispatch</text>
+      <text x="44" y="365">Compliance</text>
+      <text x="44" y="413">Capacity</text>
+    </g>
+    <g fill="#007aff">
+      <rect x="28" y="165" width="8" height="8" rx="2"/>
+      <rect x="28" y="211" width="8" height="8" rx="2" opacity="0.35"/>
+      <rect x="28" y="259" width="8" height="8" rx="2" opacity="0.35"/>
+      <rect x="28" y="307" width="8" height="8" rx="2" opacity="0.35"/>
+      <rect x="28" y="355" width="8" height="8" rx="2" opacity="0.35"/>
+      <rect x="28" y="403" width="8" height="8" rx="2" opacity="0.35"/>
+    </g>
+
+    <!-- header -->
+    <text x="252" y="112" font-size="28" font-weight="600" fill="#1c2141" letter-spacing="-0.5">Plant overview</text>
+    <text x="252" y="140" font-size="15" fill="#1c2141" fill-opacity="0.55">Kiln line 1 · Shift B · Thu 16 Oct</text>
+    <rect x="904" y="88" width="120" height="34" rx="17" fill="#dcfce7"/>
+    <circle cx="926" cy="105" r="5" fill="#16a34a"/>
+    <text x="940" y="110" font-size="14" font-weight="600" fill="#15803d">Running</text>
+
+    <!-- KPIs -->
+    <g>
+      <rect x="252" y="168" width="244" height="104" rx="16" fill="#f5f9ff"/>
+      <text x="276" y="200" font-size="14" fill="#1c2141" fill-opacity="0.55">Clinker today</text>
+      <text x="276" y="242" font-size="30" font-weight="600" fill="#1c2141" letter-spacing="-0.5">2,840 t</text>
+      <text x="472" y="242" text-anchor="end" font-size="13" font-weight="600" fill="#16a34a">+6%</text>
+
+      <rect x="516" y="168" width="244" height="104" rx="16" fill="#f5f9ff"/>
+      <text x="540" y="200" font-size="14" fill="#1c2141" fill-opacity="0.55">Capacity used</text>
+      <text x="540" y="242" font-size="30" font-weight="600" fill="#1c2141" letter-spacing="-0.5">82%</text>
+      <rect x="626" y="230" width="110" height="10" rx="5" fill="#d6e4f7"/>
+      <rect x="626" y="230" width="90" height="10" rx="5" fill="#007aff"/>
+
+      <rect x="780" y="168" width="244" height="104" rx="16" fill="#f5f9ff"/>
+      <text x="804" y="200" font-size="14" fill="#1c2141" fill-opacity="0.55">Trucks dispatched</text>
+      <text x="804" y="242" font-size="30" font-weight="600" fill="#1c2141" letter-spacing="-0.5">64</text>
+      <text x="1000" y="242" text-anchor="end" font-size="13" fill="#1c2141" fill-opacity="0.5">of 72 booked</text>
+    </g>
+
+    <!-- silos -->
+    <rect x="252" y="296" width="376" height="304" rx="16" fill="#fff" stroke="#007aff" stroke-opacity="0.14" stroke-width="1.5"/>
+    <text x="276" y="330" font-size="17" font-weight="600" fill="#1c2141">Silo levels</text>
+    <rect x="416" y="312" width="196" height="28" rx="14" fill="url(#ai)"/>
+    <path transform="translate(434 326)" d="M0-7C.6-2 2-.6 7 0 2 .6.6 2 0 7-.6 2-2 .6-7 0-2-.6-.6-2 0-7z" fill="#fff"/>
+    <text x="448" y="331" font-size="13" fill="#fff" font-weight="600">Gypsum out in 3 days</text>
+    <g>
+      <!-- each silo: 56 wide, 180 tall, top y=356 -->
+      <rect x="284" y="356" width="56" height="180" rx="14" fill="#eef4fc"/>
+      <rect x="284" y="396" width="56" height="140" rx="14" fill="url(#fill)"/>
+      <rect x="370" y="356" width="56" height="180" rx="14" fill="#eef4fc"/>
+      <rect x="370" y="421" width="56" height="115" rx="14" fill="url(#fill)"/>
+      <rect x="456" y="356" width="56" height="180" rx="14" fill="#eef4fc"/>
+      <rect x="456" y="480" width="56" height="56" rx="14" fill="#f59e0b"/>
+      <rect x="542" y="356" width="56" height="180" rx="14" fill="#eef4fc"/>
+      <rect x="542" y="442" width="56" height="94" rx="14" fill="url(#fill)"/>
+    </g>
+    <g font-size="13" text-anchor="middle" fill="#1c2141">
+      <text x="312" y="562" font-weight="600">78%</text>
+      <text x="312" y="582" fill-opacity="0.5">Limestone</text>
+      <text x="398" y="562" font-weight="600">64%</text>
+      <text x="398" y="582" fill-opacity="0.5">Clinker</text>
+      <text x="484" y="562" font-weight="600" fill="#b45309">31%</text>
+      <text x="484" y="582" fill-opacity="0.5">Gypsum</text>
+      <text x="570" y="562" font-weight="600">52%</text>
+      <text x="570" y="582" fill-opacity="0.5">Fly ash</text>
+    </g>
+
+    <!-- schedule -->
+    <rect x="648" y="296" width="376" height="304" rx="16" fill="#fff" stroke="#007aff" stroke-opacity="0.14" stroke-width="1.5"/>
+    <text x="672" y="330" font-size="17" font-weight="600" fill="#1c2141">Plant schedule</text>
+    <rect x="874" y="312" width="130" height="28" rx="14" fill="#e1eeff"/>
+    <path transform="translate(892 326)" d="M0-7C.6-2 2-.6 7 0 2 .6.6 2 0 7-.6 2-2 .6-7 0-2-.6-.6-2 0-7z" fill="#007aff"/>
+    <text x="906" y="331" font-size="13" fill="#007aff" font-weight="600">AI optimised</text>
+    <g font-size="12" fill="#1c2141" fill-opacity="0.45" text-anchor="middle">
+      <text x="790" y="362">06</text>
+      <text x="852" y="362">12</text>
+      <text x="914" y="362">18</text>
+      <text x="976" y="362">24</text>
+    </g>
+    <g fill="#007aff" fill-opacity="0.1">
+      <rect x="790" y="372" width="1" height="204"/>
+      <rect x="852" y="372" width="1" height="204"/>
+      <rect x="914" y="372" width="1" height="204"/>
+      <rect x="976" y="372" width="1" height="204"/>
+    </g>
+    <g font-size="13" fill="#1c2141">
+      <text x="672" y="398">Kiln 1</text>
+      <text x="672" y="440">Raw mill</text>
+      <text x="672" y="482">Cement mill 1</text>
+      <text x="672" y="524">Cement mill 2</text>
+      <text x="672" y="566">Packing</text>
+    </g>
+    <g>
+      <rect x="770" y="382" width="230" height="22" rx="7" fill="#007aff"/>
+      <rect x="770" y="424" width="120" height="22" rx="7" fill="#007aff"/>
+      <rect x="900" y="424" width="100" height="22" rx="7" fill="#007aff" fill-opacity="0.45"/>
+      <rect x="770" y="466" width="70" height="22" rx="7" fill="url(#hatch)" stroke="#f59e0b" stroke-opacity="0.6"/>
+      <rect x="848" y="466" width="152" height="22" rx="7" fill="#007aff"/>
+      <rect x="790" y="508" width="180" height="22" rx="7" fill="#007aff" fill-opacity="0.45"/>
+      <rect x="800" y="550" width="80" height="22" rx="7" fill="#007aff"/>
+      <rect x="890" y="550" width="96" height="22" rx="7" fill="#007aff"/>
+    </g>
+
+    <!-- compliance -->
+    <rect x="252" y="624" width="376" height="252" rx="16" fill="#f5f9ff"/>
+    <text x="276" y="658" font-size="17" font-weight="600" fill="#1c2141">Compliance documents</text>
+    <g font-size="14">
+      <circle cx="288" cy="698" r="12" fill="#16a34a"/>
+      <path d="M282 698l4 4 7-8" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="312" y="694" font-weight="600" fill="#1c2141">Emission report · Oct</text>
+      <text x="312" y="712" font-size="12" fill="#1c2141" fill-opacity="0.5">Filed 02 Oct</text>
+
+      <circle cx="288" cy="756" r="12" fill="#16a34a"/>
+      <path d="M282 756l4 4 7-8" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="312" y="752" font-weight="600" fill="#1c2141">Quality cert · CEM II 42.5</text>
+      <text x="312" y="770" font-size="12" fill="#1c2141" fill-opacity="0.5">Batch 1187 · auto-attached</text>
+
+      <circle cx="288" cy="814" r="12" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="287" y="808" width="2.5" height="7" rx="1" fill="#f59e0b"/>
+      <text x="312" y="810" font-weight="600" fill="#1c2141">Safety audit</text>
+      <text x="312" y="828" font-size="12" fill="#b45309">Due 22 Oct</text>
+    </g>
+
+    <!-- dispatch queue -->
+    <rect x="648" y="624" width="376" height="252" rx="16" fill="#f5f9ff"/>
+    <text x="672" y="658" font-size="17" font-weight="600" fill="#1c2141">Truck queue</text>
+    <text x="1000" y="658" text-anchor="end" font-size="13" fill="#1c2141" fill-opacity="0.5">8 waiting</text>
+    <g font-size="14" fill="#1c2141">
+      <rect x="668" y="676" width="336" height="54" rx="12" fill="#fff"/>
+      <text x="688" y="700" font-weight="600">DK-4471-A</text>
+      <text x="688" y="718" font-size="12" fill-opacity="0.5">40 t · Bay 2</text>
+      <rect x="900" y="690" width="88" height="26" rx="13" fill="#e1eeff"/>
+      <text x="944" y="708" text-anchor="middle" font-size="12" font-weight="600" fill="#007aff">Loading</text>
+
+      <rect x="668" y="738" width="336" height="54" rx="12" fill="#fff"/>
+      <text x="688" y="762" font-weight="600">DK-2208-C</text>
+      <text x="688" y="780" font-size="12" fill-opacity="0.5">32 t · Bay 1</text>
+      <rect x="900" y="752" width="88" height="26" rx="13" fill="#dcfce7"/>
+      <text x="944" y="770" text-anchor="middle" font-size="12" font-weight="600" fill="#15803d">Weighed</text>
+
+      <rect x="668" y="800" width="336" height="54" rx="12" fill="#fff"/>
+      <text x="688" y="824" font-weight="600">TH-0915-B</text>
+      <text x="688" y="842" font-size="12" fill-opacity="0.5">40 t · Gate</text>
+      <rect x="900" y="814" width="88" height="26" rx="13" fill="#eef1f6"/>
+      <text x="944" y="832" text-anchor="middle" font-size="12" font-weight="600" fill="#1c2141" fill-opacity="0.6">Queued</text>
+    </g>
+  </g>
+</svg>

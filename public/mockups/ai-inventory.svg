@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3f8ff"/>
+      <stop offset="1" stop-color="#dbe8ff"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c2141"/>
+      <stop offset="1" stop-color="#007aff"/>
+    </linearGradient>
+    <linearGradient id="studio" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf2ff"/>
+      <stop offset="1" stop-color="#c7dcff"/>
+    </linearGradient>
+    <pattern id="stripe" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <rect width="16" height="16" fill="#1e3a8a"/>
+      <rect width="6" height="16" fill="#4f7fe0"/>
+    </pattern>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#004fba" flood-opacity="0.16"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+
+  <!-- stage flow -->
+  <g filter="url(#sh)">
+    <rect x="28" y="28" width="176" height="96" rx="16" fill="#fff"/>
+    <rect x="232" y="28" width="176" height="96" rx="16" fill="#fff"/>
+    <rect x="436" y="28" width="176" height="96" rx="16" fill="#fff"/>
+  </g>
+  <g font-size="12" font-weight="600" fill="#1c2141" fill-opacity="0.5" letter-spacing="0.4">
+    <text x="48" y="58">RAW MATERIAL</text>
+    <text x="252" y="58">WORK IN PROGRESS</text>
+    <text x="456" y="58">FINISHED GOODS</text>
+  </g>
+  <g font-size="26" font-weight="600" fill="#1c2141" letter-spacing="-0.5">
+    <text x="48" y="98">1,170 kg</text>
+    <text x="252" y="98">14 lots</text>
+    <text x="456" y="98">3,420 m</text>
+  </g>
+  <g fill="#007aff">
+    <path d="M210 76l12 0m-5-5 5 5-5 5" stroke="#007aff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M414 76l12 0m-5-5 5 5-5 5" stroke="#007aff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- before photo -->
+  <g filter="url(#sh)">
+    <rect x="28" y="148" width="230" height="224" rx="16" fill="#fff"/>
+  </g>
+  <rect x="42" y="162" width="202" height="160" rx="10" fill="#b8b2a6"/>
+  <rect x="42" y="250" width="202" height="72" fill="#8e877b"/>
+  <path d="M78 196l120 -14 10 96-118 18z" fill="url(#stripe)" opacity="0.8"/>
+  <rect x="42" y="162" width="202" height="160" rx="10" fill="#3a3020" opacity="0.18"/>
+  <text x="42" y="346" font-size="13" font-weight="600" fill="#1c2141">Phone photo</text>
+  <text x="42" y="362" font-size="12" fill="#1c2141" fill-opacity="0.5">Warehouse floor</text>
+
+  <!-- AI arrow -->
+  <circle cx="320" cy="250" r="30" fill="url(#ai)" filter="url(#sh)"/>
+  <path transform="translate(320 250)" d="M0-13C1.3-4 4-1.3 13 0 4 1.3 1.3 4 0 13-1.3 4-4 1.3-13 0-4-1.3-1.3-4 0-13z" fill="#fff"/>
+  <g fill="none" stroke="#007aff" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 7">
+    <path d="M264 250H286"/>
+    <path d="M354 250H376"/>
+  </g>
+  <text x="320" y="306" text-anchor="middle" font-size="12" font-weight="600" fill="#007aff">AI enhance</text>
+
+  <!-- after: studio shot -->
+  <g filter="url(#sh)">
+    <rect x="382" y="148" width="230" height="224" rx="16" fill="#fff"/>
+  </g>
+  <rect x="396" y="162" width="202" height="160" rx="10" fill="url(#studio)"/>
+  <ellipse cx="497" cy="300" rx="70" ry="9" fill="#004fba" opacity="0.25" filter="url(#soft)"/>
+  <path d="M446 190c30-8 72-8 102 0l-6 104c-30 6-60 6-90 0z" fill="url(#stripe)"/>
+  <path d="M446 190c30-8 72-8 102 0" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M452 294c30 6 60 6 90 0" fill="none" stroke="#0b1d4d" stroke-opacity="0.4" stroke-width="3"/>
+  <rect x="408" y="174" width="72" height="22" rx="11" fill="url(#ai)"/>
+  <path transform="translate(421 185)" d="M0-6C.6-2 2-.6 6 0 2 .6.6 2 0 6-.6 2-2 .6-6 0-2-.6-.6-2 0-6z" fill="#fff"/>
+  <text x="431" y="189" font-size="11" font-weight="600" fill="#fff">AI shot</text>
+  <text x="396" y="346" font-size="13" font-weight="600" fill="#1c2141">D-118 Indigo stripe</text>
+  <text x="396" y="362" font-size="12" fill="#1c2141" fill-opacity="0.5">Catalogue-ready</text>
+</svg>

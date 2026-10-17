@@ -141,6 +141,59 @@ export default function Home() {
           </div>
         </section>
 
+        {/* How we work */}
+        <section id="process" className={`${container} py-16`}>
+          <div className="grid items-start gap-12 lg:grid-cols-[1fr_568px] lg:gap-24">
+            <div className="grid gap-10 lg:pt-4">
+              <SectionHeading
+                align="left"
+                tag="How we work"
+                title="A transparent process of collaboration and feedback"
+              >
+                From shadowing your team on day one to evolving the software as
+                your business grows.
+              </SectionHeading>
+
+              <ol className="grid gap-8">
+                {steps.map((step, i) => (
+                  <li key={step.title}>
+                    <Reveal delay={i * 60} className="flex gap-4">
+                      <span className="icon-box font-display font-medium text-white">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <div className="grid gap-3">
+                        <h3 className="text-xl tracking-[-0.02em]">
+                          {step.title}
+                        </h3>
+                        <p className="max-w-lg text-ink/60">{step.description}</p>
+                      </div>
+                    </Reveal>
+                  </li>
+                ))}
+              </ol>
+            </div>
+
+            <Reveal className="card relative rounded-[32px]! p-2.5">
+              <img
+                src={images.handshake}
+                alt="Two people shaking hands"
+                className="aspect-[544/808] w-full rounded-[22px] object-cover"
+              />
+              <div className="tile absolute inset-x-8 bottom-10 flex items-center gap-4 rounded-3xl! p-5 md:inset-x-14">
+                <span className="icon-box">
+                  <Icon name="shapes" className="size-6 text-white" />
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="font-display text-xl font-medium tracking-[-0.04em]">
+                    Alongside your team
+                  </p>
+                  <p className="text-ink/60">Hands-on training during rollout</p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
         {/* Core value additions */}
         <section id="solutions" className="relative pt-24 pb-16">
           <div className="absolute inset-x-0 top-0 -z-10 h-[430px] bg-surface/50" />
@@ -160,6 +213,11 @@ export default function Home() {
                   delay={(i % 2) * 80}
                   className="card p-7"
                 >
+                  <img
+                    src={solution.image}
+                    alt=""
+                    className="mb-8 aspect-[640/400] w-full rounded-2xl object-cover"
+                  />
                   <span className="icon-box">
                     <img src={solution.icon} alt="" className="size-6" />
                   </span>
@@ -274,59 +332,6 @@ export default function Home() {
               <a href="#contact" className="btn btn-light min-w-40!">
                 Get Started
               </a>
-            </Reveal>
-          </div>
-        </section>
-
-        {/* How we work */}
-        <section id="process" className={`${container} py-16`}>
-          <div className="grid items-start gap-12 lg:grid-cols-[1fr_568px] lg:gap-24">
-            <div className="grid gap-10 lg:pt-4">
-              <SectionHeading
-                align="left"
-                tag="How we work"
-                title="A transparent process of collaboration and feedback"
-              >
-                From shadowing your team on day one to evolving the software as
-                your business grows.
-              </SectionHeading>
-
-              <ol className="grid gap-8">
-                {steps.map((step, i) => (
-                  <li key={step.title}>
-                    <Reveal delay={i * 60} className="flex gap-4">
-                      <span className="icon-box font-display font-medium text-white">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                      <div className="grid gap-3">
-                        <h3 className="text-xl tracking-[-0.02em]">
-                          {step.title}
-                        </h3>
-                        <p className="max-w-lg text-ink/60">{step.description}</p>
-                      </div>
-                    </Reveal>
-                  </li>
-                ))}
-              </ol>
-            </div>
-
-            <Reveal className="card relative rounded-[32px]! p-2.5">
-              <img
-                src={images.handshake}
-                alt="Two people shaking hands"
-                className="aspect-[544/808] w-full rounded-[22px] object-cover"
-              />
-              <div className="tile absolute inset-x-8 bottom-10 flex items-center gap-4 rounded-3xl! p-5 md:inset-x-14">
-                <span className="icon-box">
-                  <Icon name="shapes" className="size-6 text-white" />
-                </span>
-                <div className="min-w-0 flex-1">
-                  <p className="font-display text-xl font-medium tracking-[-0.04em]">
-                    Alongside your team
-                  </p>
-                  <p className="text-ink/60">Hands-on training during rollout</p>
-                </div>
-              </div>
             </Reveal>
           </div>
         </section>
